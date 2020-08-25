@@ -1,0 +1,81 @@
+{
+  "averageScoreListData": [
+    {
+      "averageChampId": 0,
+      "averageChampName": "Garen",
+      "averageScoreValue": {
+        "KDA": 2.54,
+        "Damage": 456.7,
+        "Vision": 17.8,
+        "Suvival": 3348.3,
+        "Growth": 343.4
+      }
+    },
+    {
+      "averageChampId": 1,
+      "averageChampName": "Lux",
+      "averageScoreValue": {
+        "KDA": 0.98,
+        "Damage": 210.2,
+        "Vision": 32.9,
+        "Suvival": 2965.3,
+        "Growth": 260.8
+      }
+    },
+    {
+      "averageChampId": 2,
+      "averageChampName": "Ahri",
+      "averageScoreValue": {
+        "KDA": 3.01,
+        "Damage": 486.3,
+        "Vision": 18.3,
+        "Suvival": 3843.1,
+        "Growth": 365.3
+      }
+    },
+    {
+      "averageChampId": 3,
+      "averageChampName": "Zoe",
+      "averageScoreValue": {
+        "KDA": 0.98,
+        "Damage": 289.3,
+        "Vision": 15.5,
+        "Suvival": 2942.6,
+        "Growth": 330.7
+      }
+    },
+    {
+      "averageChampId": 4,
+      "averageChampName": "Vayne",
+      "averageScoreValue": {
+        "KDA": 2.54,
+        "Damage": 456.7,
+        "Vision": 17.8,
+        "Suvival": 3348.3,
+        "Growth": 343.4
+      }
+    },
+    {
+      "averageChampId": 5,
+      "averageChampName": "Riven",
+      "averageScoreValue": {
+        "KDA": 2.54,
+        "Damage": 456.7,
+        "Vision": 17.8,
+        "Suvival": 3348.3,
+        "Growth": 343.4
+      }
+    },
+    {
+      "averageChampId": 6,
+      "averageChampName": "Akali",
+      "averageScoreValue": {
+        "KDA": 2.54,
+        "Damage": 456.7,
+        "Vision": 17.8,
+        "Suvival": 3348.3,
+        "Growth": 343.4
+      }
+    }
+  ]
+}

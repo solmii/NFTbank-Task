@@ -6,6 +6,7 @@ import { theme } from '../../Styles/theme';
 const ChampItem = ({ champ, specifyActiveChamp, setIsActive, isActive }) => {
   const { champId, numOfPlays, champImg } = champ;
 
+  // champ icon 클릭시 ActiveChamp, IsActive 상태 저장
   const handleChampBtn = () => {
     specifyActiveChamp(champId);
     setIsActive(champId);

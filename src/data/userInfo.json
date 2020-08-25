@@ -1,18 +1,19 @@
 {
   "userInfo": {
-    "userName": "NFTBank",
+    "userName": "Solmii",
     "userTier": "Gold 3",
     "userIcon": "https://image.fmkorea.com/files/attach/new/20181011/486616/400326/1317926897/4abc5c1ca469db498f935cfe2fed8a69.jpg",
     "userLevel": 84,
     "preferredChamp": [
       {
         "champId": 0,
+        "champTier": 2,
         "champName": "Garen",
-        "champImg": "https://i.pinimg.com/474x/40/50/77/40507737fc0a9bc7d1e65d7b52e21dfa.jpg",
+        "champImg": "https://t1.daumcdn.net/cfile/tistory/995CF44E5B802CF415",
         "numOfPlays": 83,
         "winningRate": 39.8,
         "champScore": {
-          "score": 31.4,
+          "Score": 31.4,
           "KDA": 2.54,
           "Damage": 456.7,
           "Vision": 17.8,
@@ -22,12 +23,13 @@
       },
       {
         "champId": 1,
+        "champTier": 1,
         "champName": "Lux",
         "champImg": "https://mblogthumb-phinf.pstatic.net/MjAxOTA0MTlfMTY3/MDAxNTU1NjU0MjIxNzQy.Pagsa8aYQDUz1yQSP4KhAoVZGsewQ7vH_hfoaV6GTvgg.ct9RqZ-8p-ALvdKDnaKKgh2lJYUkJjp1lcZPe0vQTJgg.PNG.louis0826/%EB%9F%AD%EC%8A%A42.png?type=w800",
         "numOfPlays": 75,
         "winningRate": 67.2,
         "champScore": {
-          "score": 38.2,
+          "Score": 38.2,
           "KDA": 0.98,
           "Damage": 210.2,
           "Vision": 32.9,
@@ -37,12 +39,13 @@
       },
       {
         "champId": 2,
+        "champTier": 3,
         "champName": "Ahri",
         "champImg": "https://t1.daumcdn.net/cfile/tistory/994FE0505A6690280B",
         "numOfPlays": 61,
         "winningRate": 40.3,
         "champScore": {
-          "score": 24.3,
+          "Score": 24.3,
           "KDA": 3.01,
           "Damage": 486.3,
           "Vision": 18.3,
@@ -52,12 +55,13 @@
       },
       {
         "champId": 3,
+        "champTier": 5,
         "champName": "Zoe",
         "champImg": "https://mblogthumb-phinf.pstatic.net/MjAyMDA2MTBfOTEg/MDAxNTkxNzUxMTQ1NzMy.4ddVEDvwYzQbORa12O1PdDKZd4oX7ttCoNAwIapgK44g.MjisMotwhMBy3z3gVnFGbUEBtZRMqsFaV-LEseprf24g.PNG.louis0826/%EC%A1%B0%EC%9D%B4.PNG?type=w800",
         "numOfPlays": 54,
         "winningRate": 12.5,
         "champScore": {
-          "score": 13.4,
+          "Score": 13.4,
           "KDA": 0.98,
           "Damage": 289.3,
           "Vision": 15.5,
@@ -67,12 +71,13 @@
       },
       {
         "champId": 4,
+        "champTier": 1,
         "champName": "Vayne",
-        "champImg": "https://lh3.googleusercontent.com/proxy/P2HaCzeuCjCEbxibxrkhNgButCpOl2YaZqB_m0pkkg-OIzxYXlOUFzb7hIZoNR47ybGE3UIrkg079wmU7b6YbWXIeM8pDgskqJ2E2jZXE7hZt6rFh2_MQ6mMFq-MkPwJZDZKwLQbUylhdOPhliT2Qtnendn4jycX-z8_ERzAaHnVTjL4PXxiEPp97FBjVWQ06S8K-Nq8_gaHHahnddUcODFOcV-ZSAt2S2H_-X0utVk8lchW3N6tnkLmuKwKXGUKZ92R2JyAqqM6Kc2D6RoCex2dkr_PLVI",
+        "champImg": "https://t1.daumcdn.net/cfile/tistory/99EE584C5A3489A134",
         "numOfPlays": 43,
         "winningRate": 78.2,
         "champScore": {
-          "score": 31.4,
+          "Score": 31.4,
           "KDA": 2.54,
           "Damage": 456.7,
           "Vision": 17.8,
@@ -82,12 +87,13 @@
       },
       {
         "champId": 5,
+        "champTier": 4,
         "champName": "Riven",
-        "champImg": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg",
+        "champImg": "https://mblogthumb-phinf.pstatic.net/MjAxOTA4MjJfMzIg/MDAxNTY2NDM3MTQ2NzE3.onBksNaBp0ENwUBmYvwBOU54riEwpVTqxb81og98w7cg.aWUuYlmkZ0-sOcN5pYmfekLtFpXC6xUHyhbKUfyJWXAg.PNG.tnwldi4545/image.png?type=w800",
         "numOfPlays": 39,
         "winningRate": 39.8,
         "champScore": {
-          "score": 31.4,
+          "Score": 31.4,
           "KDA": 2.54,
           "Damage": 456.7,
           "Vision": 17.8,
@@ -97,12 +103,13 @@
       },
       {
         "champId": 6,
+        "champTier": 3,
         "champName": "Akali",
         "champImg": "https://mblogthumb-phinf.pstatic.net/MjAxODA3MTdfMjEg/MDAxNTMxODMzMDkyOTQ2._2QsM2_2L-g5yIhqcFFZs2QIdY-htKhyvtELkwpJsH4g.GffK6SQ29OhE2-qiWho4WLNsRWeDTmSYhHO501C7JLEg.JPEG.cap1_/1.jpg?type=w800",
         "numOfPlays": 27,
         "winningRate": 39.8,
         "champScore": {
-          "score": 31.4,
+          "Score": 31.4,
           "KDA": 2.54,
           "Damage": 456.7,
           "Vision": 17.8,

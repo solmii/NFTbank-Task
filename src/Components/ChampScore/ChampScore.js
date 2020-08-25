@@ -1,40 +1,57 @@
-import React from 'react';
+/* eslint-disable react-native/no-inline-styles */
+import React, { useState } from 'react';
 import styled from 'styled-components/native';
-import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
-import { theme } from '../Styles/theme';
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, FlatList } from 'react-native';
+import ChampScoreCategory from './ChampScoreCategory';
+import ChampScoreChart from './ChampScoreChart';
+import { theme } from '../../Styles/theme';
 
-const ChampScore = () => {
-  // const { userName, userTier } = data;
+const ChampScore = ({ selectedChampScore, averageScore, userName }) => {
+  const {
+    champName,
+    champImg,
+    champTier,
+    winningRate,
+    champScore,
+    champScore: { KDA },
+  } = selectedChampScore;
+  const { averageScoreValue } = averageScore;
+
+  const [isActiveCategory, setIsActiveCategory] = useState('Score');
+  const [isActive, setIsActive] = useState('Score');
+
+  // Champ Score 카테고리 클릭시 ActiveCategory, IsActive 상태 저장
+  const specifyActiveCategory = (categoryTitle) => {
+    setIsActiveCategory(categoryTitle);
+    setIsActive(categoryTitle);
+  };
 
   return (
     <View style={styles.champScore}>
       <View style={styles.currentChampBox}>
-        <Image
-          source={{ uri: 'https://menu.mt.co.kr/moneyweek/thumb/2019/12/13/06/2019121312598062451_1.jpg' }}
-          style={styles.champImg}
-        />
+        <Image source={{ uri: champImg }} style={styles.champImg} />
 
         <View style={styles.champInfoBox}>
-          <Text style={styles.champInfoName}>Garen</Text>
-          <Text style={styles.champInfoTier}>Gold 3</Text>
+          <Text style={styles.champInfoName}>{champName}</Text>
+          <Text style={styles.champInfoTier}>{champTier} Tier</Text>
         </View>
       </View>
 
       <View style={styles.champRateBox}>
         <View style={styles.champRateItem}>
           <Text style={styles.champRateItemTitle}>Win %</Text>
-          <Text style={styles.champRateItemValue}>39.8%</Text>
+          <Text style={styles.champRateItemValue}>{winningRate}%</Text>
         </View>
         <View style={styles.champRateItem}>
           <Text style={styles.champRateItemTitle}>KDA</Text>
-          <Text style={styles.champRateItemValue}>2.54:1</Text>
+          <Text style={styles.champRateItemValue}>{KDA}:1</Text>
         </View>
       </View>
 
       <Text style={styles.champScoreTitle}>Champ Score</Text>
       <View style={{ flexDirection: 'row' }}>
         <Text style={{ color: theme.mainBlue, paddingRight: 20 }}>
-          <ColorChip style={styles.colorChip} fillColor={theme.mainBlue} /> Muntary
+          <ColorChip style={styles.colorChip} fillColor={theme.mainBlue} /> {userName}
         </Text>
         <Text style={{ color: theme.mediumGray }}>
           <ColorChip style={styles.colorChip} fillColor={theme.mediumGray} /> Tier Avg
@@ -42,49 +59,27 @@ const ChampScore = () => {
       </View>
 
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.scoreCategory}>
-        <View style={styles.scoreCategoryItem}>
-          <Text style={styles.scoreCategoryTitle}>Champ Score</Text>
-          <Text style={{ color: theme.mainBlue, fontSize: 28, fontWeight: 'bold' }}>23.0</Text>
-        </View>
-
-        <View style={styles.scoreCategoryItem}>
-          <View>
-            <Text style={styles.scoreCategoryTitle}>KDA</Text>
-          </View>
-          <View>
-            <Text style={styles.scoreCategoryValue}>1.93</Text>
-            <Text style={styles.scoreCategoryAvg}>2.31</Text>
-          </View>
-        </View>
-
-        <View style={styles.scoreCategoryItem}>
-          <View>
-            <Text style={styles.scoreCategoryTitle}>KDA</Text>
-          </View>
-          <View>
-            <Text style={styles.scoreCategoryValue}>1.93</Text>
-            <Text style={styles.scoreCategoryAvg}>2.31</Text>
-          </View>
-        </View>
-
-        <View style={styles.scoreCategoryItem}>
-          <View>
-            <Text style={styles.scoreCategoryTitle}>KDA</Text>
-          </View>
-          <View>
-            <Text style={styles.scoreCategoryValue}>1.93</Text>
-            <Text style={styles.scoreCategoryAvg}>2.31</Text>
-          </View>
-        </View>
+        {Object.keys(champScore).map((category) => (
+          <ChampScoreCategory
+            key={category}
+            title={category}
+            isActive={isActive}
+            champScoreData={champScore}
+            averageScoreData={averageScoreValue}
+            specifyActiveCategory={specifyActiveCategory}
+          />
+        ))}
       </ScrollView>
 
-      <View style={{ height: 250, backgroundColor: 'pink' }}>
+      {/* <View style={{ height: 250, backgroundColor: 'pink' }}>
         <Text>차트 들어올 자리</Text>
-      </View>
+        <Text>{champScore[isActiveCategory]}</Text>
+      </View> */}
+      <ChampScoreChart activeCategoryScore={champScore[isActiveCategory]} />
 
-      <View style={styles.recommendGameTextBox}>
+      <TouchableOpacity style={styles.recommendGameTextBox}>
         <Text style={styles.recommendGameText}>"Let's try another game besides LOL"</Text>
-      </View>
+      </TouchableOpacity>
 
       <View style={styles.buttonForm}>
         <TouchableOpacity
