@@ -34,10 +34,10 @@ const ChampScore = () => {
       <Text style={styles.champScoreTitle}>Champ Score</Text>
       <View style={{ flexDirection: 'row' }}>
         <Text style={{ color: theme.mainBlue, paddingRight: 20 }}>
-          <ColorChip fillColor={theme.mainBlue} /> Muntary
+          <ColorChip style={styles.colorChip} fillColor={theme.mainBlue} /> Muntary
         </Text>
         <Text style={{ color: theme.mediumGray }}>
-          <ColorChip fillColor={theme.mediumGray} /> Tier Avg
+          <ColorChip style={styles.colorChip} fillColor={theme.mediumGray} /> Tier Avg
         </Text>
       </View>
 
@@ -173,6 +173,10 @@ const styles = StyleSheet.create({
     borderColor: theme.mediumGray,
     borderRadius: 5,
   },
+  colorChip: {
+    width: 10,
+    height: 10,
+  },
   scoreCategoryItem: {
     justifyContent: 'space-between',
     width: 120,
@@ -216,7 +220,5 @@ const styles = StyleSheet.create({
 export default ChampScore;
 
 const ColorChip = styled.View`
-  width: 10;
-  height: 10;
   background-color: ${(props) => props.fillColor};
 `;

@@ -1,10 +1,10 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { StyleSheet, Text, View, Image, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { theme } from '../Styles/theme';
 
-const UserForm = ({ data }) => {
-  const { userName, userTier, userLevel } = data;
+const UserForm = ({ userInfo }) => {
+  const { userName, userIcon, userTier, userLevel } = userInfo;
 
   const getFormatDate = () => {
     const date = new Date();
@@ -21,10 +21,7 @@ const UserForm = ({ data }) => {
         <View style={styles.userLevel}>
           <Text style={styles.levelText}>{userLevel}</Text>
         </View>
-        <Image
-          source={{ uri: 'https://menu.mt.co.kr/moneyweek/thumb/2019/12/13/06/2019121312598062451_1.jpg' }}
-          style={styles.userIcon}
-        />
+        <Image source={{ uri: userIcon }} style={styles.userIcon} />
       </View>
 
       <View style={styles.userInfoBox}>
@@ -42,25 +39,24 @@ const UserForm = ({ data }) => {
 const styles = StyleSheet.create({
   userForm: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'center',
     paddingVertical: 20,
-    paddingHorizontal: 40,
     backgroundColor: theme.rightGray,
   },
   userLevel: {
     position: 'absolute',
     bottom: 0,
     right: 0,
-    paddingVertical: 6,
+    paddingVertical: 4,
     paddingHorizontal: 8,
     borderRadius: 50,
     backgroundColor: 'black',
     zIndex: 2,
   },
   levelText: {
-    fontSize: 10,
-    color: '#fff',
+    fontSize: 13,
+    color: 'white',
   },
   userIcon: {
     width: 80,
@@ -68,10 +64,10 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   userInfoBox: {
-    width: 220,
+    marginLeft: 20,
   },
   userIdText: {
-    fontSize: 14,
+    fontSize: 15,
     fontWeight: 'bold',
   },
   scoreText: {
