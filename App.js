@@ -1,8 +1,10 @@
 import React from 'react';
-import { StyleSheet, ScrollView, View, Text } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import UserForm from './src/Components/UserForm';
 import ChampSelectBar from './src/Components/ChampSelectBar/ChampSelectBar';
 import ChampScore from './src/Components/ChampScore';
+import ChampCounter from './src/Components/ChampCounter/ChampCounter';
+import { theme } from './src/Styles/theme';
 
 const userData = {
   userName: 'solmii',
@@ -16,6 +18,7 @@ const App = () => {
       <UserForm data={userData} />
       <ChampSelectBar />
       <ChampScore />
+      <ChampCounter />
     </ScrollView>
   );
 };
@@ -23,7 +26,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: theme.rightGray,
   },
 });
 
