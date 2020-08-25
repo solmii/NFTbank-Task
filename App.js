@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, ScrollView } from 'react-native';
+// import NavBar from './src/Components/NavBar';
 import UserForm from './src/Components/UserForm';
 import ChampSelectBar from './src/Components/ChampSelectBar/ChampSelectBar';
 import ChampScore from './src/Components/ChampScore';
@@ -14,12 +15,15 @@ const userData = {
 
 const App = () => {
   return (
-    <ScrollView style={styles.container}>
-      <UserForm data={userData} />
-      <ChampSelectBar />
-      <ChampScore />
-      <ChampCounter />
-    </ScrollView>
+    <>
+      {/* <NavBar /> */}
+      <ScrollView style={styles.container}>
+        <UserForm data={userData} />
+        <ChampSelectBar />
+        <ChampScore />
+        <ChampCounter />
+      </ScrollView>
+    </>
   );
 };
 
