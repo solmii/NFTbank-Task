@@ -5,20 +5,18 @@ import UserForm from './src/Components/UserForm';
 import ChampSelectBar from './src/Components/ChampSelectBar/ChampSelectBar';
 import ChampScore from './src/Components/ChampScore';
 import ChampCounter from './src/Components/ChampCounter/ChampCounter';
+import * as userInfo from './src/data/userInfo.json';
 import { theme } from './src/Styles/theme';
 
-const userData = {
-  userName: 'solmii',
-  userTier: 'Gold 3',
-  userLevel: 76,
-};
-
 const App = () => {
+  const userData = userInfo.userInfo;
+  const preferredChampData = userInfo.userInfo.preferredChamp;
+
   return (
     <>
       {/* <NavBar /> */}
       <ScrollView style={styles.container}>
-        <UserForm data={userData} />
+        <UserForm userInfo={userData} />
         <ChampSelectBar />
         <ChampScore />
         <ChampCounter />
