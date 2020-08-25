@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   userIcon: {
     width: 80,
     height: 80,
-    borderRadius: 100 / 2,
+    borderRadius: 50,
   },
   userInfoBox: {
     width: 220,
