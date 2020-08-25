@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, ScrollView, View, Text } from 'react-native';
 import UserForm from './src/Components/UserForm';
+import ChampSelectBar from './src/Components/ChampSelectBar/ChampSelectBar';
 
 const userData = {
   userName: 'solmii',
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <ScrollView style={styles.container}>
       <UserForm data={userData} />
+      <ChampSelectBar />
     </ScrollView>
   );
 };
