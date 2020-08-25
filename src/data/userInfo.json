@@ -6,6 +6,7 @@
     "userLevel": 84,
     "preferredChamp": [
       {
+        "champId": 0,
         "champName": "Garen",
         "champImg": "https://i.pinimg.com/474x/40/50/77/40507737fc0a9bc7d1e65d7b52e21dfa.jpg",
         "numOfPlays": 83,
@@ -20,6 +21,7 @@
         }
       },
       {
+        "champId": 1,
         "champName": "Lux",
         "champImg": "https://mblogthumb-phinf.pstatic.net/MjAxOTA0MTlfMTY3/MDAxNTU1NjU0MjIxNzQy.Pagsa8aYQDUz1yQSP4KhAoVZGsewQ7vH_hfoaV6GTvgg.ct9RqZ-8p-ALvdKDnaKKgh2lJYUkJjp1lcZPe0vQTJgg.PNG.louis0826/%EB%9F%AD%EC%8A%A42.png?type=w800",
         "numOfPlays": 75,
@@ -34,6 +36,7 @@
         }
       },
       {
+        "champId": 2,
         "champName": "Ahri",
         "champImg": "https://t1.daumcdn.net/cfile/tistory/994FE0505A6690280B",
         "numOfPlays": 61,
@@ -48,6 +51,7 @@
         }
       },
       {
+        "champId": 3,
         "champName": "Zoe",
         "champImg": "https://mblogthumb-phinf.pstatic.net/MjAyMDA2MTBfOTEg/MDAxNTkxNzUxMTQ1NzMy.4ddVEDvwYzQbORa12O1PdDKZd4oX7ttCoNAwIapgK44g.MjisMotwhMBy3z3gVnFGbUEBtZRMqsFaV-LEseprf24g.PNG.louis0826/%EC%A1%B0%EC%9D%B4.PNG?type=w800",
         "numOfPlays": 54,
@@ -62,6 +66,7 @@
         }
       },
       {
+        "champId": 4,
         "champName": "Vayne",
         "champImg": "https://lh3.googleusercontent.com/proxy/P2HaCzeuCjCEbxibxrkhNgButCpOl2YaZqB_m0pkkg-OIzxYXlOUFzb7hIZoNR47ybGE3UIrkg079wmU7b6YbWXIeM8pDgskqJ2E2jZXE7hZt6rFh2_MQ6mMFq-MkPwJZDZKwLQbUylhdOPhliT2Qtnendn4jycX-z8_ERzAaHnVTjL4PXxiEPp97FBjVWQ06S8K-Nq8_gaHHahnddUcODFOcV-ZSAt2S2H_-X0utVk8lchW3N6tnkLmuKwKXGUKZ92R2JyAqqM6Kc2D6RoCex2dkr_PLVI",
         "numOfPlays": 43,
@@ -76,6 +81,7 @@
         }
       },
       {
+        "champId": 5,
         "champName": "Riven",
         "champImg": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg",
         "numOfPlays": 39,
@@ -90,6 +96,7 @@
         }
       },
       {
+        "champId": 6,
         "champName": "Akali",
         "champImg": "https://mblogthumb-phinf.pstatic.net/MjAxODA3MTdfMjEg/MDAxNTMxODMzMDkyOTQ2._2QsM2_2L-g5yIhqcFFZs2QIdY-htKhyvtELkwpJsH4g.GffK6SQ29OhE2-qiWho4WLNsRWeDTmSYhHO501C7JLEg.JPEG.cap1_/1.jpg?type=w800",
         "numOfPlays": 27,

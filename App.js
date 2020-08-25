@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, ScrollView } from 'react-native';
 // import NavBar from './src/Components/NavBar';
 import UserForm from './src/Components/UserForm';
@@ -12,13 +12,20 @@ const App = () => {
   const userData = userInfo.userInfo;
   const preferredChampData = userInfo.userInfo.preferredChamp;
 
+  const [isActiveChamp, setIsActiveChamp] = useState(0);
+
+  const specifyActiveChamp = (champId) => {
+    alert(champId);
+    setIsActiveChamp(champId);
+  };
+
   return (
     <>
       {/* <NavBar /> */}
       <ScrollView style={styles.container}>
         <UserForm userInfo={userData} />
-        <ChampSelectBar />
-        <ChampScore />
+        <ChampSelectBar preferredChamp={preferredChampData} specifyActiveChamp={specifyActiveChamp} />
+        <ChampScore champScore={preferredChampData[isActiveChamp]} />
         <ChampCounter />
       </ScrollView>
     </>

@@ -1,15 +1,28 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import styld from 'styled-components';
+import { StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
 import { theme } from '../../Styles/theme';
 
-const ChampItem = ({ champ }) => {
-  const [isActive, setIsActive] = useState(false); // 썸네일 클릭시 파란색 테두리 생기면서 강조
+const ChampItem = ({ champ, specifyActiveChamp, setIsActive, isActive }) => {
+  const { champId, numOfPlays, champImg } = champ;
+
+  const handleChampBtn = () => {
+    specifyActiveChamp(champId);
+    setIsActive(champId);
+  };
 
   return (
-    <View style={styles.champItemBox} onClick={() => setIsActive(!isActive)}>
-      <Text style={styles.champItemText}>{champ.numOfPlays}</Text>
-      <Image style={styles.champItemImg} source={{ uri: champ.champImg }} />
-    </View>
+    <TouchableOpacity onPress={handleChampBtn} style={styles.champItemBox}>
+      {isActive === champId ? (
+        <Text style={styles.champItemTextActive}>{numOfPlays} Games</Text>
+      ) : (
+        <Text style={styles.champItemText}>{numOfPlays}</Text>
+      )}
+      <Image
+        style={isActive === champId ? styles.champItemImgActive : styles.champItemImg}
+        source={{ uri: champImg }}
+      />
+    </TouchableOpacity>
   );
 };
 
@@ -25,11 +38,24 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: theme.mediumGray,
   },
+  champItemTextActive: {
+    marginBottom: 5,
+    fontSize: 12,
+    color: theme.mainBlue,
+  },
   champItemImg: {
     marginHorizontal: 5,
     width: 48,
     height: 48,
     borderRadius: 50,
+  },
+  champItemImgActive: {
+    marginHorizontal: 5,
+    width: 48,
+    height: 48,
+    borderRadius: 50,
+    borderWidth: 2,
+    borderColor: theme.mainBlue,
   },
 });
 
