@@ -4,77 +4,84 @@
       "averageChampId": 0,
       "averageChampName": "Garen",
       "averageScoreValue": {
-        "KDA": 2.54,
-        "Damage": 456.7,
-        "Vision": 17.8,
-        "Suvival": 3348.3,
-        "Growth": 343.4
+        "Score": 50,
+        "KDA": 2.24,
+        "Damage": 496.2,
+        "Vision": 24.3,
+        "Suvival": 3626.2,
+        "Growth": 313.9
       }
     },
     {
       "averageChampId": 1,
       "averageChampName": "Lux",
       "averageScoreValue": {
-        "KDA": 0.98,
-        "Damage": 210.2,
-        "Vision": 32.9,
-        "Suvival": 2965.3,
-        "Growth": 260.8
+        "Score": 50,
+        "KDA": 1.43,
+        "Damage": 267.2,
+        "Vision": 45.2,
+        "Suvival": 5367.3,
+        "Growth": 214.5
       }
     },
     {
       "averageChampId": 2,
       "averageChampName": "Ahri",
       "averageScoreValue": {
-        "KDA": 3.01,
-        "Damage": 486.3,
-        "Vision": 18.3,
-        "Suvival": 3843.1,
-        "Growth": 365.3
+        "Score": 50,
+        "KDA": 3.63,
+        "Damage": 523.7,
+        "Vision": 23.5,
+        "Suvival": 3632.7,
+        "Growth": 396.2
       }
     },
     {
       "averageChampId": 3,
       "averageChampName": "Zoe",
       "averageScoreValue": {
-        "KDA": 0.98,
-        "Damage": 289.3,
-        "Vision": 15.5,
-        "Suvival": 2942.6,
-        "Growth": 330.7
+        "Score": 50,
+        "KDA": 1.34,
+        "Damage": 352.6,
+        "Vision": 12.5,
+        "Suvival": 3423.5,
+        "Growth": 361.2
       }
     },
     {
       "averageChampId": 4,
       "averageChampName": "Vayne",
       "averageScoreValue": {
-        "KDA": 2.54,
-        "Damage": 456.7,
-        "Vision": 17.8,
-        "Suvival": 3348.3,
-        "Growth": 343.4
+        "Score": 50,
+        "KDA": 4.54,
+        "Damage": 556.7,
+        "Vision": 7.8,
+        "Suvival": 2648.3,
+        "Growth": 303.4
       }
     },
     {
       "averageChampId": 5,
       "averageChampName": "Riven",
       "averageScoreValue": {
-        "KDA": 2.54,
-        "Damage": 456.7,
-        "Vision": 17.8,
-        "Suvival": 3348.3,
-        "Growth": 343.4
+        "Score": 50,
+        "KDA": 1.73,
+        "Damage": 406.7,
+        "Vision": 9.2,
+        "Suvival": 3942.3,
+        "Growth": 293.4
       }
     },
     {
       "averageChampId": 6,
       "averageChampName": "Akali",
       "averageScoreValue": {
-        "KDA": 2.54,
-        "Damage": 456.7,
-        "Vision": 17.8,
-        "Suvival": 3348.3,
-        "Growth": 343.4
+        "Score": 50,
+        "KDA": 2.01,
+        "Damage": 356.7,
+        "Vision": 29.8,
+        "Suvival": 3848.3,
+        "Growth": 233.4
       }
     }
   ]

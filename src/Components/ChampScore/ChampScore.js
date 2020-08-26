@@ -1,5 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components/native';
 import {
   StyleSheet,
@@ -10,19 +10,19 @@ import {
   ScrollView,
 } from 'react-native';
 import ChampScoreCategory from './ChampScoreCategory';
-// import ChampScoreChart from './ChampScoreChart';
-import {theme} from '../../Styles/theme';
+import ChampScoreChart from './ChampScoreChart';
+import { theme } from '../../Styles/theme';
 
-const ChampScore = ({selectedChampScore, averageScore, userName}) => {
+const ChampScore = ({ selectedChampScore, averageScore, userName }) => {
   const {
     champName,
     champImg,
     champTier,
     winningRate,
     champScore,
-    champScore: {KDA},
+    champScore: { KDA },
   } = selectedChampScore;
-  const {averageScoreValue} = averageScore;
+  const { averageScoreValue } = averageScore;
 
   const [isActiveCategory, setIsActiveCategory] = useState('Score');
   const [isActive, setIsActive] = useState('Score');
@@ -36,14 +36,13 @@ const ChampScore = ({selectedChampScore, averageScore, userName}) => {
   return (
     <View style={styles.champScore}>
       <View style={styles.currentChampBox}>
-        <Image source={{uri: champImg}} style={styles.champImg} />
+        <Image source={{ uri: champImg }} style={styles.champImg} />
 
         <View style={styles.champInfoBox}>
           <Text style={styles.champInfoName}>{champName}</Text>
           <Text style={styles.champInfoTier}>{champTier} Tier</Text>
         </View>
       </View>
-
       <View style={styles.champRateBox}>
         <View style={styles.champRateItem}>
           <Text style={styles.champRateItemTitle}>Win %</Text>
@@ -54,19 +53,17 @@ const ChampScore = ({selectedChampScore, averageScore, userName}) => {
           <Text style={styles.champRateItemValue}>{KDA}:1</Text>
         </View>
       </View>
-
       <Text style={styles.champScoreTitle}>Champ Score</Text>
-      <View style={{flexDirection: 'row'}}>
-        <Text style={{color: theme.mainBlue, paddingRight: 20}}>
+      <View style={{ flexDirection: 'row' }}>
+        <Text style={{ color: theme.mainBlue, paddingRight: 20 }}>
           <ColorChip style={styles.colorChip} fillColor={theme.mainBlue} />{' '}
           {userName}
         </Text>
-        <Text style={{color: theme.mediumGray}}>
+        <Text style={{ color: theme.mediumGray }}>
           <ColorChip style={styles.colorChip} fillColor={theme.mediumGray} />{' '}
           Tier Avg
         </Text>
       </View>
-
       <ScrollView
         horizontal={true}
         showsHorizontalScrollIndicator={false}
@@ -83,18 +80,20 @@ const ChampScore = ({selectedChampScore, averageScore, userName}) => {
         ))}
       </ScrollView>
 
-      <View style={{height: 250, backgroundColor: 'pink'}}>
-        <Text>차트 들어올 자리</Text>
-        <Text>{champScore[isActiveCategory]}</Text>
+      <View style={styles.userScoreBox}>
+        <Text style={styles.userScoreText}>{champScore[isActiveCategory]}</Text>
       </View>
-      {/* <ChampScoreChart activeCategoryScore={champScore[isActiveCategory]} /> */}
+
+      <ChampScoreChart
+        champScoreData={champScore}
+        averageScoreData={averageScoreValue}
+      />
 
       <TouchableOpacity style={styles.recommendGameTextBox}>
         <Text style={styles.recommendGameText}>
           "Let's try another game besides LOL"
         </Text>
       </TouchableOpacity>
-
       <View style={styles.buttonForm}>
         <TouchableOpacity
           style={{
@@ -182,6 +181,7 @@ const styles = StyleSheet.create({
     borderColor: theme.mediumGray,
     borderRadius: 5,
   },
+
   colorChip: {
     width: 10,
     height: 10,
@@ -203,6 +203,21 @@ const styles = StyleSheet.create({
   },
   scoreCategoryAvg: {
     color: 'gray',
+  },
+  userScoreBox: {
+    alignSelf: 'center',
+    position: 'absolute',
+    top: 555,
+    paddingVertical: 4,
+    paddingHorizontal: 14,
+    borderRadius: 10,
+    zIndex: 20,
+    backgroundColor: 'rgba(227,242,253,0.5)',
+  },
+  userScoreText: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: theme.mainBlue,
   },
   recommendGameTextBox: {
     marginVertical: 10,

@@ -1,8 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import styled from 'styled-components';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import {theme} from '../../Styles/theme';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { theme } from '../../Styles/theme';
 
 const ChampScoreCategory = ({
   title,

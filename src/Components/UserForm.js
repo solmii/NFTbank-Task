@@ -1,10 +1,10 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
-import {theme} from '../Styles/theme';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { theme } from '../Styles/theme';
 
-const UserForm = ({userInfo}) => {
-  const {userName, userIcon, userTier, userLevel} = userInfo;
+const UserForm = ({ userInfo }) => {
+  const { userName, userIcon, userTier, userLevel } = userInfo;
 
   const getFormatDate = () => {
     const date = new Date();
@@ -17,19 +17,19 @@ const UserForm = ({userInfo}) => {
 
   return (
     <View style={styles.userForm}>
-      <View style={{position: 'relative'}}>
+      <View style={{ position: 'relative' }}>
         <View style={styles.userLevel}>
           <Text style={styles.levelText}>{userLevel}</Text>
         </View>
-        <Image source={{uri: userIcon}} style={styles.userIcon} />
+        <Image source={{ uri: userIcon }} style={styles.userIcon} />
       </View>
 
       <View style={styles.userInfoBox}>
         <Text style={styles.userIdText}>{userName}'s</Text>
         <Text style={styles.scoreText}>Champion Scorecard</Text>
         <View style={styles.tierInfoBox}>
-          <Text style={{color: theme.mediumGray}}>{userTier}</Text>
-          <Text style={{color: theme.mediumGray}}>{now} data</Text>
+          <Text style={{ color: theme.mediumGray }}>{userTier}</Text>
+          <Text style={{ color: theme.mediumGray }}>{now} data</Text>
         </View>
       </View>
     </View>
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   userInfoBox: {
-    marginLeft: 20,
+    marginLeft: 30,
   },
   userIdText: {
     fontSize: 15,
