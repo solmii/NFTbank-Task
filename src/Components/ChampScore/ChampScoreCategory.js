@@ -8,7 +8,7 @@ const ChampScoreCategory = ({
   title,
   champScoreData,
   averageScoreData,
-  specifyActiveCategory,
+  setIsActiveCategory,
   isActive,
 }) => {
   const categoryDescription = {
@@ -18,25 +18,25 @@ const ChampScoreCategory = ({
     Growth: 'Golds+XP / min',
   };
 
-  // 현재 선택된 버튼 isActive와 props로 전달받은 title이 일치할 때
-  const CurrentActive = isActive === title;
+  // 현재 선택된 탭 isActive와 props로 전달받은 title이 일치하는 상태
+  const currentActive = isActive === title;
 
   return (
-    <TouchableOpacity onPress={() => specifyActiveCategory(title)}>
+    <TouchableOpacity onPress={() => setIsActiveCategory(title)}>
       <CategoryBtnBox
         style={styles.scoreCategoryItem}
-        CurrentActive={CurrentActive}>
+        currentActive={currentActive}>
         <View>
           <CategoryBtnTitle
             style={styles.scoreCategoryTitle}
-            CurrentActive={CurrentActive}>
+            currentActive={currentActive}>
             {title}
           </CategoryBtnTitle>
           <Text style={styles.scoreAvgTitle}>{categoryDescription[title]}</Text>
         </View>
         <View>
           <CategoryBtnValue
-            CurrentActive={CurrentActive}
+            currentActive={currentActive}
             style={
               title === 'Score'
                 ? styles.champScoreValue
@@ -45,7 +45,9 @@ const ChampScoreCategory = ({
             {champScoreData[title]}
           </CategoryBtnValue>
           {title !== 'Score' && (
-            <Text style={styles.scoreAvgValue}>{averageScoreData[title]}</Text>
+            <CategoryBtnAvgValue currentActive={currentActive}>
+              {averageScoreData[title]}
+            </CategoryBtnAvgValue>
           )}
         </View>
       </CategoryBtnBox>
@@ -78,9 +80,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  scoreAvgValue: {
-    color: 'gray',
-  },
   recommendGameTextBox: {
     marginVertical: 10,
     paddingVertical: 14,
@@ -107,13 +106,17 @@ export default ChampScoreCategory;
 
 const CategoryBtnBox = styled.View`
   background-color: ${(props) =>
-    props.CurrentActive ? theme.mainBlue : 'white'};
+    props.currentActive ? theme.mainBlue : 'white'};
 `;
 
 const CategoryBtnTitle = styled.Text`
-  color: ${(props) => (props.CurrentActive ? 'white' : 'black')};
+  color: ${(props) => (props.currentActive ? 'white' : 'black')};
 `;
 
 const CategoryBtnValue = styled.Text`
-  color: ${(props) => (props.CurrentActive ? 'white' : theme.mainBlue)};
+  color: ${(props) => (props.currentActive ? 'white' : theme.mainBlue)};
+`;
+
+const CategoryBtnAvgValue = styled.Text`
+  color: ${(props) => (props.currentActive ? theme.rightGray : '#888')};
 `;
