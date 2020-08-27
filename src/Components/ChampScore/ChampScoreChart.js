@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import styled from 'styled-components';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 import Plotly from 'react-native-plotly';
 import { theme } from '../../Styles/theme';
 
@@ -9,6 +8,7 @@ const ChampScoreChart = ({ champScoreData, averageScoreData }) => {
   const champScores = Object.values(champScoreData).reverse();
   const averageScoreValues = Object.values(averageScoreData).reverse();
 
+  // user score를 avg score 기준으로 백분율로 치환
   const getUserScore = (userArr, avgArr) => {
     let result = [];
 
@@ -19,41 +19,33 @@ const ChampScoreChart = ({ champScoreData, averageScoreData }) => {
   };
 
   const userScoreArr = getUserScore(champScores, averageScoreValues);
-  const avgArr = [100, 100, 100, 100, 100, 100, 100];
+  const avgScoreArr = [100, 100, 100, 100, 100, 100, 100];
 
+  // chart config
   const data = [
     {
-      type: 'scatterpolar',
       name: 'userGroup',
+      type: 'scatterpolar',
       r: [...userScoreArr, userScoreArr[0]],
       theta: [...champScoreTitles, champScoreTitles[0]],
       fill: 'none',
       mode: 'lines',
-      hoverlabel: {
-        bgcolor: theme.rightGray,
-        bordercolor: theme.mainBlue,
-      },
       line: {
         color: theme.mainBlue,
       },
     },
     {
-      type: 'scatterpolar',
       name: 'avgGroup',
-      r: avgArr,
+      type: 'scatterpolar',
+      r: avgScoreArr,
       theta: [...champScoreTitles, champScoreTitles[0]],
       fill: 'none',
       mode: 'lines',
-      hoverlabel: {
-        bgcolor: theme.rightGray,
-        bordercolor: theme.mainBlue,
-      },
       line: {
         color: theme.mediumGray,
       },
     },
   ];
-
   const layout = {
     height: 320,
     margin: {
@@ -72,12 +64,17 @@ const ChampScoreChart = ({ champScoreData, averageScoreData }) => {
         rangemode: 'nomal',
         color: theme.mediumGray,
         showticklabels: false,
-        ticklen: 0,
         showline: false,
+        ticklen: 0,
       },
       angularaxis: {
         rotation: 210,
-        color: theme.mediumGray,
+        color: '#eee',
+        ticklen: 0,
+        tickfont: {
+          color: '#888',
+          size: 13,
+        },
       },
       gridshape: 'linear',
     },

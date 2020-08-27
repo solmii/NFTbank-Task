@@ -6,6 +6,7 @@ import { theme } from '../Styles/theme';
 const UserForm = ({ userInfo }) => {
   const { userName, userIcon, userTier, userLevel } = userInfo;
 
+  // 현재 날짜 구해서 yyyy.mm.dd 형태로 변환
   const getFormatDate = () => {
     const date = new Date();
     const year = date.getFullYear();

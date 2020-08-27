@@ -24,14 +24,11 @@ const ChampScore = ({ selectedChampScore, averageScore, userName }) => {
   } = selectedChampScore;
   const { averageScoreValue } = averageScore;
 
-  const [isActiveCategory, setIsActiveCategory] = useState('Score');
-  const [isActive, setIsActive] = useState('Score');
-
   // Champ Score 카테고리 클릭시 ActiveCategory, IsActive 상태 저장
-  const specifyActiveCategory = (categoryTitle) => {
-    setIsActiveCategory(categoryTitle);
-    setIsActive(categoryTitle);
-  };
+  const [isActiveCategory, setIsActiveCategory] = useState('Score');
+
+  // 차트 위에 표시할, 현재 선택된 카테고리 값
+  const currentSelectCategory = champScore[isActiveCategory];
 
   return (
     <View style={styles.champScore}>
@@ -72,16 +69,16 @@ const ChampScore = ({ selectedChampScore, averageScore, userName }) => {
           <ChampScoreCategory
             key={category}
             title={category}
-            isActive={isActive}
+            isActive={isActiveCategory}
             champScoreData={champScore}
             averageScoreData={averageScoreValue}
-            specifyActiveCategory={specifyActiveCategory}
+            setIsActiveCategory={setIsActiveCategory}
           />
         ))}
       </ScrollView>
 
       <View style={styles.userScoreBox}>
-        <Text style={styles.userScoreText}>{champScore[isActiveCategory]}</Text>
+        <Text style={styles.userScoreText}>{currentSelectCategory}</Text>
       </View>
 
       <ChampScoreChart
@@ -95,27 +92,13 @@ const ChampScore = ({ selectedChampScore, averageScore, userName }) => {
         </Text>
       </TouchableOpacity>
       <View style={styles.buttonForm}>
-        <TouchableOpacity
-          style={{
-            width: '49%',
-            marginVertical: 5,
-            paddingVertical: 14,
-            borderRadius: 6,
-            backgroundColor: theme.mainGreen,
-          }}>
+        <ChartTabBtn style={styles.chartTabBtn} bgColor={theme.mainGreen}>
           <Text style={styles.buttonText}>PERF Rank</Text>
-        </TouchableOpacity>
+        </ChartTabBtn>
 
-        <TouchableOpacity
-          style={{
-            width: '49%',
-            marginVertical: 5,
-            paddingVertical: 14,
-            borderRadius: 6,
-            backgroundColor: theme.mainBlue,
-          }}>
+        <ChartTabBtn style={styles.chartTabBtn} bgColor={theme.mainBlue}>
           <Text style={styles.buttonText}>Champion Rec</Text>
-        </TouchableOpacity>
+        </ChartTabBtn>
       </View>
     </View>
   );
@@ -234,6 +217,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
+  chartTabBtn: {
+    width: '49%',
+    marginVertical: 5,
+    paddingVertical: 14,
+    borderRadius: 6,
+  },
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
@@ -245,4 +234,8 @@ export default ChampScore;
 
 const ColorChip = styled.View`
   background-color: ${(props) => props.fillColor};
+`;
+
+const ChartTabBtn = styled.TouchableOpacity`
+  background-color: ${(props) => props.bgColor};
 `;
