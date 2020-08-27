@@ -46,6 +46,7 @@ const ChampScoreChart = ({ champScoreData, averageScoreData }) => {
       },
     },
   ];
+
   const layout = {
     height: 320,
     margin: {
@@ -54,14 +55,10 @@ const ChampScoreChart = ({ champScoreData, averageScoreData }) => {
       t: 20,
       d: 0,
     },
-    legend: {
-      bordercolor: theme.mediumGray,
-    },
     polar: {
       radialaxis: {
         visible: true,
         range: [0, 200],
-        rangemode: 'nomal',
         color: theme.mediumGray,
         showticklabels: false,
         showline: false,
