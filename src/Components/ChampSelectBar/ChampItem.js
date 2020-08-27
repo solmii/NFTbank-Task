@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
-import styld from 'styled-components';
-import {StyleSheet, Text, Image, TouchableOpacity} from 'react-native';
-import {theme} from '../../Styles/theme';
+import React from 'react';
+import { StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
+import { theme } from '../../Styles/theme';
 
-const ChampItem = ({champ, specifyActiveChamp, setIsActive, isActive}) => {
-  const {champId, numOfPlays, champImg} = champ;
+const ChampItem = ({ champ, specifyActiveChamp, setIsActive, isActive }) => {
+  const { champId, numOfPlays, champImg } = champ;
 
   // champ icon 클릭시 ActiveChamp, IsActive 상태 저장
   const handleChampBtn = () => {
@@ -23,7 +22,7 @@ const ChampItem = ({champ, specifyActiveChamp, setIsActive, isActive}) => {
         style={
           isActive === champId ? styles.champItemImgActive : styles.champItemImg
         }
-        source={{uri: champImg}}
+        source={{ uri: champImg }}
       />
     </TouchableOpacity>
   );

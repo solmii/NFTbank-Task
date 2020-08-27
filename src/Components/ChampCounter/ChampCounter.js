@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import ChampCounterItem from './ChampCounterItem';
-import {theme} from '../../Styles/theme';
+import { theme } from '../../Styles/theme';
 // json 데이터 받아온 후에 지우기
-import {counterChampData} from '../../data/userChampList';
+import { counterChampData } from '../../data/userChampList';
 
 const ChampCounter = () => {
   const [CounterChamp, setCounterChamp] = useState([]);
