@@ -4,7 +4,13 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import { theme } from '../../Styles/theme';
 
 const ChampCounterItem = ({ champ }) => {
-  const { counterChampName, counterChampImg, numOfPlays, numOfWins, numOfDefeats } = champ;
+  const {
+    counterChampName,
+    counterChampImg,
+    numOfPlays,
+    numOfWins,
+    numOfDefeats,
+  } = champ;
 
   const getChampRate = () => {
     let result = (numOfWins / (numOfWins + numOfDefeats)) * 100;
@@ -17,7 +23,10 @@ const ChampCounterItem = ({ champ }) => {
   return (
     <View style={styles.champCounterItem}>
       <View style={styles.champCounterImgBox}>
-        <Image style={styles.champCounterImg} source={{ uri: counterChampImg }} />
+        <Image
+          style={styles.champCounterImg}
+          source={{ uri: counterChampImg }}
+        />
         <View
           style={{
             marginLeft: 10,

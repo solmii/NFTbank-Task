@@ -19,7 +19,33 @@
           "Vision": 37.8,
           "Suvival": 1748.3,
           "Growth": 343.4
-        }
+        },
+        "counterChampData": [
+          {
+            "counterChampId": 0,
+            "counterChampName": "Fiora",
+            "counterChampImg": "https://mblogthumb-phinf.pstatic.net/MjAyMDAxMDNfMjgg/MDAxNTc3OTkxNjQ4ODM0.tzc1C3ZEZosjN_rVdICOJPlcZIDG3XAMo6-LVVwuXFQg.1_-N3kZOLOqfVhUFgL2i8xmDkc7P1MR6pgL_FRvrrhUg.PNG.santa2210/KakaoTalk_20200102_205950088.png?type=w800",
+            "numOfPlays": 3,
+            "numOfWins": 0,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 1,
+            "counterChampName": "Yorick",
+            "counterChampImg": "https://i.ytimg.com/vi/JIWg_uMy7uE/maxresdefault.jpg",
+            "numOfPlays": 5,
+            "numOfWins": 2,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 2,
+            "counterChampName": "Cassiopeia",
+            "counterChampImg": "https://mblogthumb-phinf.pstatic.net/MjAxODA2MDdfMTQy/MDAxNTI4MzcxMTQ2MTkx.kTxnmEt5PAp1W_cpLGu0KlzfMLf38mnwe_3KJlFV7YIg.d7Tkdmcie45vvCtffiLl1AARPh8skF-7qNbsMsMlD24g.JPEG.smilecat007/%EB%A1%A4_%EC%8B%9C%EC%A6%8C8_%EC%B9%B4%EC%8B%9C%EC%98%A4%ED%8E%98%EC%95%84_%EB%A3%AC_1.jpg?type=w800",
+            "numOfPlays": 3,
+            "numOfWins": 1,
+            "numOfDefeats": 2
+          }
+        ]
       },
       {
         "champId": 1,
@@ -35,7 +61,33 @@
           "Vision": 52.9,
           "Suvival": 2965.3,
           "Growth": 350.8
-        }
+        },
+        "counterChampData": [
+          {
+            "counterChampId": 0,
+            "counterChampName": "Fiora",
+            "counterChampImg": "https://img.insight.co.kr/static/2020/08/21/700/x63uljh875279o626ps5.jpg",
+            "numOfPlays": 3,
+            "numOfWins": 0,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 1,
+            "counterChampName": "Yorick",
+            "counterChampImg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt766d98c27adfde28/5db06004347d1c6baa57be4f/RiotX_ChampionList_singed.jpg?quality=90&width=250",
+            "numOfPlays": 5,
+            "numOfWins": 2,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 2,
+            "counterChampName": "Cassiopeia",
+            "counterChampImg": "https://image.zdnet.co.kr/2018/12/05/firstblood_UFF1LuM1N.jpg",
+            "numOfPlays": 3,
+            "numOfWins": 1,
+            "numOfDefeats": 2
+          }
+        ]
       },
       {
         "champId": 2,
@@ -51,7 +103,33 @@
           "Vision": 8.3,
           "Suvival": 4443.1,
           "Growth": 505.3
-        }
+        },
+        "counterChampData": [
+          {
+            "counterChampId": 0,
+            "counterChampName": "Fiora",
+            "counterChampImg": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2513D23A513DE8A60F",
+            "numOfPlays": 3,
+            "numOfWins": 0,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 1,
+            "counterChampName": "Yorick",
+            "counterChampImg": "https://www.wikileaks-kr.org/news/photo/201907/61604_39733_4522.jpg",
+            "numOfPlays": 5,
+            "numOfWins": 2,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 2,
+            "counterChampName": "Cassiopeia",
+            "counterChampImg": "https://image.chosun.com/sitedata/image/201909/27/2019092701691_0.png",
+            "numOfPlays": 3,
+            "numOfWins": 1,
+            "numOfDefeats": 2
+          }
+        ]
       },
       {
         "champId": 3,
@@ -67,7 +145,33 @@
           "Vision": 15.5,
           "Suvival": 2942.6,
           "Growth": 330.7
-        }
+        },
+        "counterChampData": [
+          {
+            "counterChampId": 0,
+            "counterChampName": "Fiora",
+            "counterChampImg": "https://blog.kakaocdn.net/dn/bBU16C/btqCU62Ywpl/E8j3VJfRrAQdzkFkisnOwK/img.png",
+            "numOfPlays": 3,
+            "numOfWins": 0,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 1,
+            "counterChampName": "Yorick",
+            "counterChampImg": "https://images.kbench.com/kbench/article/2015_05/k150671p1n1.jpg",
+            "numOfPlays": 5,
+            "numOfWins": 2,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 2,
+            "counterChampName": "Cassiopeia",
+            "counterChampImg": "https://t1.daumcdn.net/cfile/tistory/262B9C4555066DCE35",
+            "numOfPlays": 3,
+            "numOfWins": 1,
+            "numOfDefeats": 2
+          }
+        ]
       },
       {
         "champId": 4,
@@ -83,7 +187,33 @@
           "Vision": 3.2,
           "Suvival": 3758.3,
           "Growth": 326.4
-        }
+        },
+        "counterChampData": [
+          {
+            "counterChampId": 0,
+            "counterChampName": "Fiora",
+            "counterChampImg": "https://blog.kakaocdn.net/dn/bBU16C/btqCU62Ywpl/E8j3VJfRrAQdzkFkisnOwK/img.png",
+            "numOfPlays": 3,
+            "numOfWins": 0,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 1,
+            "counterChampName": "Yorick",
+            "counterChampImg": "https://images.kbench.com/kbench/article/2015_05/k150671p1n1.jpg",
+            "numOfPlays": 5,
+            "numOfWins": 2,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 2,
+            "counterChampName": "Cassiopeia",
+            "counterChampImg": "https://t1.daumcdn.net/cfile/tistory/262B9C4555066DCE35",
+            "numOfPlays": 3,
+            "numOfWins": 1,
+            "numOfDefeats": 2
+          }
+        ]
       },
       {
         "champId": 5,
@@ -99,7 +229,33 @@
           "Vision": 11.8,
           "Suvival": 1008.3,
           "Growth": 363.4
-        }
+        },
+        "counterChampData": [
+          {
+            "counterChampId": 0,
+            "counterChampName": "Fiora",
+            "counterChampImg": "https://blog.kakaocdn.net/dn/bBU16C/btqCU62Ywpl/E8j3VJfRrAQdzkFkisnOwK/img.png",
+            "numOfPlays": 3,
+            "numOfWins": 0,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 1,
+            "counterChampName": "Yorick",
+            "counterChampImg": "https://images.kbench.com/kbench/article/2015_05/k150671p1n1.jpg",
+            "numOfPlays": 5,
+            "numOfWins": 2,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 2,
+            "counterChampName": "Cassiopeia",
+            "counterChampImg": "https://t1.daumcdn.net/cfile/tistory/262B9C4555066DCE35",
+            "numOfPlays": 3,
+            "numOfWins": 1,
+            "numOfDefeats": 2
+          }
+        ]
       },
       {
         "champId": 6,
@@ -115,7 +271,33 @@
           "Vision": 5.8,
           "Suvival": 2548.3,
           "Growth": 403.4
-        }
+        },
+        "counterChampData": [
+          {
+            "counterChampId": 0,
+            "counterChampName": "Fiora",
+            "counterChampImg": "https://blog.kakaocdn.net/dn/bBU16C/btqCU62Ywpl/E8j3VJfRrAQdzkFkisnOwK/img.png",
+            "numOfPlays": 3,
+            "numOfWins": 0,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 1,
+            "counterChampName": "Yorick",
+            "counterChampImg": "https://images.kbench.com/kbench/article/2015_05/k150671p1n1.jpg",
+            "numOfPlays": 5,
+            "numOfWins": 2,
+            "numOfDefeats": 3
+          },
+          {
+            "counterChampId": 2,
+            "counterChampName": "Cassiopeia",
+            "counterChampImg": "https://t1.daumcdn.net/cfile/tistory/262B9C4555066DCE35",
+            "numOfPlays": 3,
+            "numOfWins": 1,
+            "numOfDefeats": 2
+          }
+        ]
       }
     ]
   }

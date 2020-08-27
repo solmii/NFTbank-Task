@@ -24,17 +24,6 @@ const ChampScoreChart = ({ champScoreData, averageScoreData }) => {
   // chart config
   const data = [
     {
-      name: 'userGroup',
-      type: 'scatterpolar',
-      r: [...userScoreArr, userScoreArr[0]],
-      theta: [...champScoreTitles, champScoreTitles[0]],
-      fill: 'none',
-      mode: 'lines',
-      line: {
-        color: theme.mainBlue,
-      },
-    },
-    {
       name: 'avgGroup',
       type: 'scatterpolar',
       r: avgScoreArr,
@@ -43,6 +32,17 @@ const ChampScoreChart = ({ champScoreData, averageScoreData }) => {
       mode: 'lines',
       line: {
         color: theme.mediumGray,
+      },
+    },
+    {
+      name: 'userGroup',
+      type: 'scatterpolar',
+      r: [...userScoreArr, userScoreArr[0]],
+      theta: [...champScoreTitles, champScoreTitles[0]],
+      fill: 'none',
+      mode: 'lines',
+      line: {
+        color: theme.mainBlue,
       },
     },
   ];
