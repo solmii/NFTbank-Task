@@ -1,10 +1,12 @@
 # NFTbank-Task
 
-React native와 plotly 를 활용해 과제 해결
+React native와 plotly.js를 활용해 게임 전적 사이트 일부 구현하는 과제
 
 ---
 
 ## Demo
+
+[![Watch the video](https://file2.nocutnews.co.kr/newsroom/image/2018/08/22/20180822073728245946_0_647_210.jpg)](https://youtu.be/D-_lGJpye5g)
 
 ---
 
