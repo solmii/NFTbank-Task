@@ -10,8 +10,15 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/art": "1.2.0",
+    "d3": "6.0.0",
+    "d3-scale": "3.2.2",
     "react": "16.13.1",
+    "react-d3-radar": "1.0.0-rc6",
     "react-native": "0.63.2",
+    "react-native-plotly": "4.0.0",
+    "react-native-svg": "12.1.0",
+    "react-native-webview": "10.8.2",
     "styled-components": "5.1.1"
   },
   "devDependencies": {

@@ -15,9 +15,9 @@
         "champScore": {
           "Score": 31.4,
           "KDA": 2.54,
-          "Damage": 456.7,
-          "Vision": 17.8,
-          "Suvival": 3348.3,
+          "Damage": 256.7,
+          "Vision": 37.8,
+          "Suvival": 1748.3,
           "Growth": 343.4
         }
       },
@@ -30,11 +30,11 @@
         "winningRate": 67.2,
         "champScore": {
           "Score": 38.2,
-          "KDA": 0.98,
-          "Damage": 210.2,
-          "Vision": 32.9,
+          "KDA": 0.38,
+          "Damage": 160.2,
+          "Vision": 52.9,
           "Suvival": 2965.3,
-          "Growth": 260.8
+          "Growth": 350.8
         }
       },
       {
@@ -45,12 +45,12 @@
         "numOfPlays": 61,
         "winningRate": 40.3,
         "champScore": {
-          "Score": 24.3,
-          "KDA": 3.01,
+          "Score": 44.3,
+          "KDA": 3.71,
           "Damage": 486.3,
-          "Vision": 18.3,
-          "Suvival": 3843.1,
-          "Growth": 365.3
+          "Vision": 8.3,
+          "Suvival": 4443.1,
+          "Growth": 505.3
         }
       },
       {
@@ -77,12 +77,12 @@
         "numOfPlays": 43,
         "winningRate": 78.2,
         "champScore": {
-          "Score": 31.4,
-          "KDA": 2.54,
-          "Damage": 456.7,
-          "Vision": 17.8,
-          "Suvival": 3348.3,
-          "Growth": 343.4
+          "Score": 66.2,
+          "KDA": 6.54,
+          "Damage": 756.7,
+          "Vision": 3.2,
+          "Suvival": 3758.3,
+          "Growth": 326.4
         }
       },
       {
@@ -93,12 +93,12 @@
         "numOfPlays": 39,
         "winningRate": 39.8,
         "champScore": {
-          "Score": 31.4,
-          "KDA": 2.54,
-          "Damage": 456.7,
-          "Vision": 17.8,
-          "Suvival": 3348.3,
-          "Growth": 343.4
+          "Score": 26.4,
+          "KDA": 2.94,
+          "Damage": 444.7,
+          "Vision": 11.8,
+          "Suvival": 1008.3,
+          "Growth": 363.4
         }
       },
       {
@@ -109,12 +109,12 @@
         "numOfPlays": 27,
         "winningRate": 39.8,
         "champScore": {
-          "Score": 31.4,
-          "KDA": 2.54,
-          "Damage": 456.7,
-          "Vision": 17.8,
-          "Suvival": 3348.3,
-          "Growth": 343.4
+          "Score": 43.4,
+          "KDA": 3.04,
+          "Damage": 476.2,
+          "Vision": 5.8,
+          "Suvival": 2548.3,
+          "Growth": 403.4
         }
       }
     ]
