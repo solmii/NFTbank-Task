@@ -1,14 +1,9 @@
-/**
- * @format
- * @flow strict-local
- */
-
 import React, { useState } from 'react';
 import { StyleSheet, ScrollView, StatusBar } from 'react-native';
 import UserForm from './src/Components/UserForm';
 import ChampSelectBar from './src/Components/ChampSelectBar/ChampSelectBar';
-import ChampCounter from './src/Components/ChampCounter/ChampCounter';
 import ChampScore from './src/Components/ChampScore/ChampScore';
+import ChampCounter from './src/Components/ChampCounter/ChampCounter';
 import { theme } from './src/Styles/theme';
 import * as userInfo from './src/data/userInfo.json';
 import * as averageScoreListData from './src/data/averageScore.json';
@@ -18,8 +13,8 @@ const App = () => {
   const averageScoreData = averageScoreListData.averageScoreListData;
   const preferredChampData = userInfo.userInfo.preferredChamp;
 
+  // ChampSelectBar에서 선택한 champ 상태 저장
   const [isActiveChamp, setIsActiveChamp] = useState(0);
-
   const specifyActiveChamp = (champId) => {
     setIsActiveChamp(champId);
   };
@@ -38,7 +33,9 @@ const App = () => {
           averageScore={averageScoreData[isActiveChamp]}
           userName={userData.userName}
         />
-        <ChampCounter />
+        <ChampCounter
+          selectedChampCounter={preferredChampData[isActiveChamp]}
+        />
       </ScrollView>
     </>
   );
