@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import ChampCounterItem from './ChampCounterItem';
 import { theme } from '../../Styles/theme';
-// json 데이터 받아온 후에 지우기
-import { counterChampData } from '../../data/userChampList';
 
-const ChampCounter = () => {
-  const [CounterChamp, setCounterChamp] = useState([]);
-
-  useEffect(() => {
-    setCounterChamp(counterChampData);
-  }, []);
+const ChampCounter = ({ selectedChampCounter }) => {
+  const { champName, counterChampData } = selectedChampCounter;
 
   return (
     <View style={styles.champCounter}>
@@ -20,12 +14,12 @@ const ChampCounter = () => {
           style={{
             color: theme.mainBlue,
           }}>
-          Garen
+          {champName}
         </Text>
         's Counters
       </Text>
 
-      {CounterChamp.map((champ) => (
+      {counterChampData.map((champ) => (
         <ChampCounterItem key={champ.counterChampId} champ={champ} />
       ))}
     </View>
